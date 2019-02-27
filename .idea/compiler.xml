@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EpamHomeTask2Matyshenko" target="1.5" />
+      <module name="EpamHomeTask2Matyshenko" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
