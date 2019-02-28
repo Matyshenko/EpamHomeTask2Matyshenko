@@ -51,7 +51,7 @@ public class Main {
         System.out.println("Загрузка: " + unsplitedStringForCarLoadCapacity); // удалить потом
 
         unsplitedStringForNumberOfPassangers = dataReadFile.fileRaderString(createFiles.numberOfPassanger(), dataValidatorForInteger);
-        System.out.println("Passagers: " + unsplitedStringForNumberOfPassangers);
+        System.out.println("Passagers: " + unsplitedStringForNumberOfPassangers); // удалить потом
 
 
         SplitLine splitLine = new SpliterString();
