@@ -14,7 +14,6 @@ public class TxtFileValidator implements ValidateTxt {
             Pattern pattern = Pattern.compile(FILE_NAME);
             Matcher matcher = pattern.matcher(fileName);
             if (matcher.find()) {
-                isValid = true;
                 return matcher.find();
             }
         }

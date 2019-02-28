@@ -5,13 +5,17 @@ public enum Color {
     BLACK("Black"),
     GREEN("Green"),
     WHTIE("White"),
-    YELLOW("Yellow"),
-    BLUE("Blue");
+    YELLOW("Yellow");
 
     private String name;
 
     Color(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return " " + name ;
     }
 
     public String getName() {

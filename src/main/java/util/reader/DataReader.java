@@ -8,7 +8,7 @@ public class DataReader implements DataReadFile {
         try {
             StringBuilder stringBuilder = new StringBuilder();
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-            String line;
+            String line = "";
             while ((line = bufferedReader.readLine()) != null) {
                 if (unverified.isValidData(line)) {
                     stringBuilder.append(line).append(" ");

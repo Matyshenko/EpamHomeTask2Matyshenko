@@ -59,4 +59,15 @@ public class Car {
     public void setNumberOfPassengerSeats(int numberOfPassengerSeats) {
         this.numberOfPassengerSeats = numberOfPassengerSeats;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", color=" + color +
+                ", price=" + price +
+                ", carLoadCapacity=" + carLoadCapacity +
+                ", numberOfPassengerSeats=" + numberOfPassengerSeats +
+                '}';
+    }
 }
