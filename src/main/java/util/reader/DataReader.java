@@ -1,10 +1,10 @@
 package util.reader;
-import util.validator.DataValidator;
+import util.validator.DataValidatorable;
 import java.io.*;
 
-public class DataReader implements DataReadFile {
+public class DataReader implements DataFileReadable {
 
-    public String fileRaderString(File file, DataValidator unverified) throws WrongFileExaprion {
+    public String fileRaderString(File file, DataValidatorable unverified) throws WrongFileExaprion {
         try {
             StringBuilder stringBuilder = new StringBuilder();
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));

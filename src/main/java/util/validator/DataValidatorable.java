@@ -1,6 +1,6 @@
 package util.validator;
 
-public interface DataValidator {
+public interface DataValidatorable {
 
  boolean isValidData(String unverifiedString);
 

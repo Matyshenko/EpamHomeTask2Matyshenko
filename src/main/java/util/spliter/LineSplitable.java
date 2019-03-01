@@ -1,5 +1,5 @@
 package util.spliter;
 
-public interface SplitLine {
+public interface LineSplitable {
     String[] split(String unsplitedString);
 }

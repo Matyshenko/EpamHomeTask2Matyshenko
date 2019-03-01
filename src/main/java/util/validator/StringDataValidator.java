@@ -1,10 +1,9 @@
 package util.validator;
 
-import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StringDataValidator implements DataValidator {
+public class StringDataValidator implements DataValidatorable {
 
     private static final String VALID_STRING = "^(\\D+\\s*)+(\\D+\\s*)$";
 

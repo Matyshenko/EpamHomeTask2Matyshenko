@@ -3,7 +3,7 @@ package util.validator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class IntegerDataValidator implements DataValidator {
+public class IntegerDataValidator implements DataValidatorable {
 
     private static final String VALID_INTEGER = "^((\\d+)\\d+ ?)++$";
 

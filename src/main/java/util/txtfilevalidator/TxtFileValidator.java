@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TxtFileValidator implements ValidateTxt {
+public class TxtFileValidator implements TxtValidatable {
     private static final String FILE_NAME = "\\.txt$";
 
     public boolean validateFile(File file) {
