@@ -1,7 +1,6 @@
 package parktaxis;
 
 import car.cartypes.Car;
-import car.cartypes.PassengerTaxi;
 import car.spetification.Color;
 
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.List;
 public class CreatorTaxis extends TaxisPark {
 
 
-    public CreatorTaxis(String name, List<Car> cars, int costOfTaxisPark) {
+    public CreatorTaxis(String name, List<Car> cars, int costOfTaxisPark) { // Вернутся к этому и сделать
         super(name, cars, costOfTaxisPark);
     }
 
@@ -20,7 +19,7 @@ public class CreatorTaxis extends TaxisPark {
         CreatorTaxis creatorTaxis = new CreatorTaxis();
         try {
             for (int i = 0; i < modelsOfCar.length; i++) {
-                Car creatorCars = new PassengerTaxi(modelsOfCar[i], color[i], priceOfCars[i], carLoadCapacity[i], numberOfPassangerSeats[i]);
+                Car creatorCars = new Car(modelsOfCar[i], color[i], priceOfCars[i], carLoadCapacity[i], numberOfPassangerSeats[i]);
                 creatorTaxis.addCars(creatorCars);
             }
         } catch (IndexOutOfBoundsException e) {
@@ -34,3 +33,17 @@ public class CreatorTaxis extends TaxisPark {
     }
 
 }
+
+
+
+//    public void creatorPlaceOfTaxi(String[] modelsOfCar, Color[] color, int[] priceOfCars, int[] carLoadCapacity, int[] numberOfPassangerSeats) {
+//        CreatorTaxis creatorTaxis = new CreatorTaxis();
+//        try {
+//            for (int i = 0; i < modelsOfCar.length; i++) {
+//                Car creatorCars = new Car(modelsOfCar[i], color[i], priceOfCars[i], carLoadCapacity[i], numberOfPassangerSeats[i]);
+//                creatorTaxis.addCars(creatorCars);
+//            }
+//        } catch (IndexOutOfBoundsException e) {
+//            System.out.println(e.getMessage());
+//        }
+//    }
