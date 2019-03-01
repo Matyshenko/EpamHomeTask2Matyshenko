@@ -8,6 +8,12 @@ public class RunnerParser {
 
     public int[] parserDataPrice() {
         int[] priceOfCars = integerParsable.parsStringToInteger(runnerSplitedString.splitedStringForPrice());
+        int summ = 0;
+        for (int i = 0; i < priceOfCars.length; i++) {
+            summ += priceOfCars[i];
+
+        }
+        System.out.println("Цена всех авто: " + summ); //убрать и переписать
         return priceOfCars;
     }
 
