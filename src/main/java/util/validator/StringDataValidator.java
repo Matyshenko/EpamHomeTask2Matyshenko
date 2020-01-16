@@ -1,16 +1,16 @@
 package util.validator;
 
+import java.io.ObjectInputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringDataValidator implements DataValidatorable {
 
-    private static final String VALID_STRING = "^(\\D+\\s*)+(\\D+\\s*)$";
+    private static final Pattern VALID_STRING_PATTERN = Pattern.compile("^(\\D+\\s*)+(\\D+\\s*)$");
 
     public boolean isValidData(String unverifiedString) {
 
-        Pattern pattern = Pattern.compile(VALID_STRING);
-        Matcher matcher = pattern.matcher(unverifiedString);
+        Matcher matcher = VALID_STRING_PATTERN.matcher(unverifiedString);
         if (matcher.find()) {
             return true;
         }

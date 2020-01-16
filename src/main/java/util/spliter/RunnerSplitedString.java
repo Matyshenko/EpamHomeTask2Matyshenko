@@ -1,5 +1,5 @@
 package util.spliter;
-
+// Создать класс tools CarService и там реализовать логику
 import static util.validator.RunnerDataValidator.unsplitedStringForModel;
 import static util.validator.RunnerDataValidator.unsplitedStringForPrice;
 import static util.validator.RunnerDataValidator.unsplitedStringForCarLoadCapacity;
@@ -7,9 +7,9 @@ import static util.validator.RunnerDataValidator.unsplitedStringForNumberOfPassa
 
 public class RunnerSplitedString {
 
-  private LineSplitable lineSplitable = new SpliterString();
+    private LineSplitable lineSplitable = new SpliterString();
 
-    public String[] splitedStringForModel() {
+    public String[] splitedStringForModel() { // нарушение инкопсуляции
         return lineSplitable.split(unsplitedStringForModel);
     }
 

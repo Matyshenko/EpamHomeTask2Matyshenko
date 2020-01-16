@@ -6,16 +6,15 @@ import util.reader.DataFileReadable;
 import util.reader.DataReader;
 import util.reader.WrongFileExaprion;
 
-public class RunnerDataValidator {
-    public static String unsplitedStringForModel = "";
+public class RunnerDataValidator { //Переименовать, это не валидатор
+    public static String unsplitedStringForModel = "";// not static
     public static String unsplitedStringForPrice = "";
     public static String unsplitedStringForCarLoadCapacity = "";
     public static String unsplitedStringForNumberOfPassangers = "";
 
-    public void startValidation(){
-        DataFileReadable dataFileReadable = new DataReader();
+    public void startValidation(){ // переписать в один метод
+        DataFileReadable dataFileReadable = new DataReader(); //Переименовать интерфейс
         FileCreatable createFiles = new CreateFiles();
-
 
         DataValidatorable dataValidatorForString = new StringDataValidator();
         DataValidatorable dataValidatorForInteger = new IntegerDataValidator();
@@ -43,8 +42,5 @@ public class RunnerDataValidator {
         } catch (WrongFileExaprion wrongFileExaprion) {
             wrongFileExaprion.printStackTrace();
         }
-
-
     }
-
 }
